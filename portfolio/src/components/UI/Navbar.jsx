@@ -7,19 +7,19 @@ export default function Navbar() {
     <header>
       <NavLink
         to="/Blog" className={({ isActive }) =>
-          `${isActive ? 'activelink' : ''}`}>
+          `${isActive ? 'primary' : ''}`}>
         Blog
       </NavLink>
 
       <NavLink
         to="/Work" className={({ isActive }) =>
-          `${isActive ? 'activelink' : ''}`}>
+          `${isActive ? 'primary' : ''}`}>
         Works
       </NavLink>
 
       <NavLink
         to="/Contact" className={({ isActive }) =>
-          `${isActive ? 'activelink' : ''}`}>
+          `${isActive ? 'primary' : ''}`}>
         Contact
       </NavLink>
     </header>
