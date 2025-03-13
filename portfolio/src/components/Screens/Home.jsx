@@ -1,4 +1,5 @@
 import React from 'react';
+import BlogPost from '../BlogPost';
 
 export default function Home() {
   return (
@@ -6,17 +7,13 @@ export default function Home() {
     Hi, I am John,
     Creative Technologist
     Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
-    Download Resume
-    Recent posts
-    View all
-    Making a design system from scratch
-    Creating pixel perfect icons in Figma
-    12 Feb 2020
-    Design, Pattern
-    12 Feb 2020
-    Figma, Icon Design
-    Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
-    Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
+    <button>Download Resume</button>
+    <div className='secondary-bg' style={{padding: '20px'}}>
+      Recent posts
+      <a href="">View all</a>
+      <BlogPost title="Making a design system from scratch" date="12 Feb 2020" category="Design, Pattern" content="Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet." />
+      <BlogPost title="Creating pixel perfect icons in Figma" date="12 Feb 2020" category="Figma, Icon Design" content="Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet." />
+    </div>
     Featured works
     Designing Dashboards
     2020

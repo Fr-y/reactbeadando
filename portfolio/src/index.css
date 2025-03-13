@@ -7,8 +7,9 @@
 
   --dark : #21243D;
   --primary: #FF6464 ;
+  --secondary: #EDF7FA;
 
-  overflow: hidden;
+  overflow-x: hidden;
 }
 /* 1em 16px
 2em 32px */
@@ -26,8 +27,7 @@ body {
 }
 
 footer{
-  position: absolute;
-  bottom: 0;
+  margin-top: 3rem;
   text-align: center;
   gap: 1em;
   padding: 1em;
@@ -66,6 +66,11 @@ a{
   text-decoration: none;
 }
 
+hr{
+  border: #E0E0E0, solid, 1px;
+  width: 100%;
+}
+
 .primary{
   color: var(--primary);
 }
@@ -73,6 +78,16 @@ a{
 .primary-bg{
   background-color: var(--primary);
   color: #fff;
+}
+
+.secondary-bg{
+  background-color: var(--secondary);
+  color: var(--dark);
+}
+
+.white-bg{
+  background-color: #fff;
+  color: var(--dark);
 }
 
 .container {
@@ -89,4 +104,8 @@ a{
 .btn{
   border: none;
   border-radius: 5pt;
+}
+
+.post{
+  width: 40rem;
 }
