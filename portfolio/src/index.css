@@ -8,6 +8,7 @@
   --dark : #21243D;
   --primary: #FF6464 ;
   --secondary: #EDF7FA;
+  --light: #8695A4;
 
   overflow-x: hidden;
 }
@@ -27,7 +28,7 @@ body {
 }
 
 footer{
-  margin-top: 3rem;
+  margin-top: 5rem;
   text-align: center;
   gap: 1em;
   padding: 1em;
@@ -64,6 +65,8 @@ header{
 a{
   color: black;
   text-decoration: none;
+  font-weight: 500;
+  font-size: 1.2em;
 }
 
 hr{
@@ -71,8 +74,24 @@ hr{
   width: 100%;
 }
 
+input{
+  border-radius: 8px;
+  border: var(--light), solid, 2px;
+  padding: 0.5em;
+  margin-top: 0.5em;
+  margin-bottom: 1em;
+}
+
+.bigInput{
+  height: 10rem;
+}
+
 .primary{
   color: var(--primary);
+}
+
+.light{
+  color: var(--light);
 }
 
 .primary-bg{
@@ -97,15 +116,80 @@ hr{
   justify-content: center;
   align-self: center;
   align-content: center;
-  width: 100%;
-  padding: 1px;
+  padding-top: 5rem;
+}
+
+.tleft{
+  text-align: left;
+  align-items: normal;
+}
+
+.m4{
+  margin-inline: 14rem;
+}
+
+.w900{
+  font-weight: 900;
+  font-size: 2.7em;
+}
+
+.row{
+  display: flex;
+  flex-direction: row;
+  gap: 1em;
+}
+
+.badge{
+  background-color: var(--dark);
+  color: #fff;
+  border-radius: 16px;
+  width: 3.87em;
+  text-align: center;
+  font-weight: 800;
 }
 
 .btn{
   border: none;
   border-radius: 5pt;
+  height: 50px;
+  font-size: 2em;
 }
 
 .post{
   width: 40rem;
+}
+.cardContainer{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.card{
+  display: flex;
+  margin-top: 1.5em;
+}
+
+.cardContent{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2em;
+}
+
+.h3{
+  font-size: 1.8em;
+  font-weight: 700;
+}
+
+.cardImage{
+  width: 246px;
+  height: 180px;
+  border-radius: 6px;
+  margin-right: 1em;
+}
+
+.title{
+  font-weight: 700;
+  font-size: 2.75em;
+  margin-bottom: 1.5em;
 }
