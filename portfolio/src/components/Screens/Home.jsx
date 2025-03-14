@@ -3,7 +3,7 @@ import BlogPost from '../BlogPost';
 
 export default function Home() {
   return (
-    <div className='container'>
+    <div className='container m4'>
     Hi, I am John,
     Creative Technologist
     Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.

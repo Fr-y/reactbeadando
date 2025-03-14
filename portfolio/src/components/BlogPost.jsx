@@ -2,8 +2,8 @@ export default function BlogPost({title, date, category, content}) {
     return (
         <div className="white-bg post">
 
-            <h3>{title}</h3>
-            <p>{date} | {category}</p>
+            <h2>{title}</h2>
+            <p style={{fontSize:"1.2em"}}>{date} | <span className="light">{category}</span></p>
             <p>{content}</p>
 
         </div>
