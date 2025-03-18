@@ -14,7 +14,7 @@ export default function Navbar() {
 
         {/* Nav Menu with correct class */}
         <nav className={`nav-menu ${isOpen ? 'open' : ''}`}>
-          <NavLink to="/"    onClick={() => setIsOpen(!isOpen)} className={({ isActive }) => isActive ? 'nav-item primary' : 'nav-item'}>H</NavLink>
+          <NavLink to="/"        onClick={() => setIsOpen(!isOpen)} className={({ isActive }) => isActive ? 'nav-item primary' : 'nav-item'}>H</NavLink>
           <NavLink to="/Blog"    onClick={() => setIsOpen(!isOpen)} className={({ isActive }) => isActive ? 'nav-item primary' : 'nav-item'}>Blog</NavLink>
           <NavLink to="/Work"    onClick={() => setIsOpen(!isOpen)} className={({ isActive }) => isActive ? 'nav-item primary' : 'nav-item'}>Works</NavLink>
           <NavLink to="/Contact" onClick={() => setIsOpen(!isOpen)} className={({ isActive }) => isActive ? 'nav-item primary' : 'nav-item'}>Contact</NavLink>
