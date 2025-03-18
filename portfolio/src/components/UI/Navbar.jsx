@@ -1,27 +1,25 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { NavLink } from 'react-router';
-
+import { Menu, X } from 'lucide-react';
 
 export default function Navbar() {
+  const [isOpen, setIsOpen] = useState(false);
+
   return (
-    <header>
-      <NavLink
-        to="/Blog" className={({ isActive }) =>
-          `${isActive ? 'primary' : ''}`}>
-        Blog
-      </NavLink>
+    <header className="navbar">
+      <div className="nav-container">
+        <button className="hamburger" onClick={() => setIsOpen(!isOpen)}>
+          {isOpen ? <X size={28} /> : <Menu size={28} />}
+        </button>
 
-      <NavLink
-        to="/Work" className={({ isActive }) =>
-          `${isActive ? 'primary' : ''}`}>
-        Works
-      </NavLink>
-
-      <NavLink
-        to="/Contact" className={({ isActive }) =>
-          `${isActive ? 'primary' : ''}`}>
-        Contact
-      </NavLink>
+        {/* Nav Menu with correct class */}
+        <nav className={`nav-menu ${isOpen ? 'open' : ''}`}>
+          <NavLink to="/"    onClick={() => setIsOpen(!isOpen)} className={({ isActive }) => isActive ? 'nav-item primary' : 'nav-item'}>H</NavLink>
+          <NavLink to="/Blog"    onClick={() => setIsOpen(!isOpen)} className={({ isActive }) => isActive ? 'nav-item primary' : 'nav-item'}>Blog</NavLink>
+          <NavLink to="/Work"    onClick={() => setIsOpen(!isOpen)} className={({ isActive }) => isActive ? 'nav-item primary' : 'nav-item'}>Works</NavLink>
+          <NavLink to="/Contact" onClick={() => setIsOpen(!isOpen)} className={({ isActive }) => isActive ? 'nav-item primary' : 'nav-item'}>Contact</NavLink>
+        </nav>
+      </div>
     </header>
-  )
+  );
 }
