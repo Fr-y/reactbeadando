@@ -172,6 +172,15 @@ input {
   text-align: center;
   font-weight: 800;
 }
+.badge-primary {
+  background-color: var(--primary);
+  color: #fff;
+  border-radius: 16px;
+  width: 3.87em;
+  height: min-content;
+  text-align: center;
+  font-weight: 800;
+}
 
 .btn {
   border: none;

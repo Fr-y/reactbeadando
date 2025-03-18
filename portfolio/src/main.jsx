@@ -9,6 +9,7 @@ import Footer from './components/UI/Footer.jsx'
 import Work from './components/Screens/Work.jsx'
 import Contact from './components/Screens/Contact.jsx'
 import Blog from './components/Screens/Blog.jsx'
+import WorkDetail from './components/Screens/WorkDetail.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
@@ -19,6 +20,7 @@ createRoot(document.getElementById('root')).render(
         <Route path='work' element={<Work/>} />
         <Route path='contact' element={<Contact />} />
         <Route path='blog' element={<Blog />} />
+        <Route path='details/:id' element={<WorkDetail />} />
       </Routes>
       <Footer />
     </BrowserRouter>

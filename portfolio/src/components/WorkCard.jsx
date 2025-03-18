@@ -1,6 +1,8 @@
+import { NavLink } from "react-router"
 
 export default function WorkCard({ title, year, category, content, image }) { 
     return (
+        <NavLink to={`/details/${ title }`} className="card">
         <div className='card'>
             <img className='cardImage' src={image} alt="Designing Dashboards" />
             <div className="cardContent">
@@ -12,5 +14,6 @@ export default function WorkCard({ title, year, category, content, image }) {
                 <p>{ content }</p>
             </div>
         </div>
+        </ NavLink >
     )
 }
