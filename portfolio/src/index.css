@@ -5,8 +5,8 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
-  --dark : #21243D;
-  --primary: #FF6464 ;
+  --dark: #21243D;
+  --primary: #FF6464;
   --secondary: #EDF7FA;
   --blue: #00A8CC;
   --light: #8695A4;
@@ -14,12 +14,13 @@
 
   overflow-x: hidden;
 }
+
 /* 1em 16px
 2em 32px */
 
 
 
-#root{
+#root {
   margin: 0;
   width: 100vw;
 }
@@ -28,7 +29,7 @@ body {
   margin: 0;
 }
 
-footer{
+footer {
   margin-top: 5rem;
   text-align: center;
   gap: 1em;
@@ -73,19 +74,19 @@ footer{
   gap: 20px;
 }
 
-a{
+a {
   color: black;
   text-decoration: none;
   font-weight: 500;
   font-size: 1.2em;
 }
 
-hr{
+hr {
   border: #E0E0E0, solid, 1px;
   width: 100%;
 }
 
-input{
+input {
   border-radius: 8px;
   border: var(--light), solid, 2px;
   padding: 0.5em;
@@ -94,33 +95,37 @@ input{
   height: 30px;
 }
 
-.bigInput{
+.bigInput {
   height: 10rem;
 }
 
-.primary{
+.primary {
   color: var(--primary);
 }
 
-.light{
+.light {
   color: var(--light);
 }
 
-.blue{
+.blue {
   color: var(--blue);
 }
 
-.primary-bg{
+.dark {
+  color: var(--dark);
+}
+
+.primary-bg {
   background-color: var(--primary);
   color: #fff;
 }
 
-.secondary-bg{
+.secondary-bg {
   background-color: var(--secondary);
   color: var(--dark);
 }
 
-.white-bg{
+.white-bg {
   background-color: #fff;
   color: var(--dark);
 }
@@ -128,34 +133,38 @@ input{
 .container {
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
   align-self: center;
   align-content: center;
   padding-top: 5rem;
 }
 
-.tleft{
+.tleft {
   text-align: left;
   align-items: normal;
 }
 
-.m4{
+.tright {
+  text-align: right;
+  align-items: normal;
+}
+
+.m4 {
   margin-inline: 14rem;
 }
 
-.w900{
+.w900 {
   font-weight: 900;
   font-size: 2.7em;
 }
 
-.row{
+.row {
   display: flex;
   flex-direction: row;
   gap: 1em;
 }
 
-.badge{
+.badge {
   background-color: var(--badge);
   color: #fff;
   border-radius: 16px;
@@ -164,74 +173,131 @@ input{
   font-weight: 800;
 }
 
-.btn{
+.btn {
   border: none;
   border-radius: 5pt;
   height: 50px;
   font-size: 2em;
 }
 
-.post{
+.john-btn {
+  border: none;
+  width: 208px;
+  height: 47px;
+  font-size: 1.2em;
+  border-radius: 2px;
+}
+
+.post {
   width: 40rem;
 }
-.cardContainer{
+
+.cardContainer {
   display: flex;
   flex-direction: column;
   justify-content: center;
   flex-wrap: wrap;
 }
 
-.card{
+.card {
   display: flex;
   margin-top: 1.5em;
 }
 
-.cardContent{
+.cardContent {
   display: flex;
   flex-direction: column;
   margin-bottom: 2em;
 }
 
-.h3{
+.h3 {
   font-size: 1.8em;
   font-weight: 700;
 }
 
-.cardImage{
+.cardImage {
   width: 246px;
   height: 180px;
   border-radius: 6px;
   margin-right: 1em;
 }
 
-.title{
+.title {
   font-weight: 700;
   font-size: 2.75em;
   margin-bottom: 1.5em;
 }
 
 
-.recentpost{
+.recentpost {
   width: 100vw;
-  display: flex;
   flex-direction: column;
   align-content: center;
+
+  .arow {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 1em;
+  }
+}
+
+.postrow {
+  justify-content: center;
+  padding-bottom: 1rem;
+
+  .post {
+    width: 20rem;
+    padding: 1rem;
+  }
+}
+
+.home {
+  align-items: center;
+}
+
+.john {
+  width: 150pt;
+  height: 150pt;
+  border-radius: 50%;
+  object-fit: cover;
+  margin: 3rem;
 }
 
 @media (max-width: 768px) {
-  .post{
+  .post {
     width: inherit;
     word-wrap: break-word;
+    margin: 0.5em;
   }
-  .m4{
+
+  .aboutjohn{
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+
+  .recentpost{
+    justify-content: center;
+  }
+
+  .postrow {
+    flex-direction: column;
+
+  }
+
+  .m4 {
     margin-inline: 2rem;
   }
+
   .hamburger {
-    display: block; /* Show on mobile */
+    display: block;
   }
 
   .nav-menu {
-    display: none; /* Hide menu by default */
+    display: none;
     flex-direction: column;
     background: white;
     height: 100vh;
@@ -242,7 +308,8 @@ input{
   }
 
   .nav-menu.open {
-    display: flex; /* Show when open */
+    display: flex;
+    /* Show when open */
   }
 
   .nav-item {
@@ -251,7 +318,7 @@ input{
     display: block;
   }
 
-  .cardImage{
+  .cardImage {
     width: 100%;
     height: 180px;
     border-radius: 6px;
@@ -259,16 +326,16 @@ input{
     margin-bottom: 1em;
   }
 
-  .card{
+  .card {
     flex-direction: column;
   }
 
-  .cardContent{
+  .cardContent {
     margin-bottom: 0.5em;
   }
 
-  .h3{
+  .h3 {
     color: var(--dark);
     font-size: 1.5em;
   }
-} 
+}

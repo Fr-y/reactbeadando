@@ -9,7 +9,7 @@ export default function Navbar() {
     <header className="navbar">
       <div className="nav-container">
         <button className="hamburger" onClick={() => setIsOpen(!isOpen)}>
-          {isOpen ? <X size={28} /> : <Menu size={28} />}
+          {isOpen ? <X size={28} /> : <Menu size={34} />}
         </button>
 
         {/* Nav Menu with correct class */}
