@@ -1,9 +1,6 @@
 import React from 'react';
 import BlogPost from '../BlogPost';
 import WorkCard from '../WorkCard';
-import dd from '../../assets/index-blog-post-images/designing-dashboards.png';
-import vp from '../../assets/index-blog-post-images/vibrant-portraits.png';
-import t36 from '../../assets/index-blog-post-images/malayalam-type.png';
 import { NavLink } from 'react-router';
 
 export default function Home() {
@@ -25,9 +22,9 @@ export default function Home() {
     </div>
     Featured works
     <div>
-      <WorkCard image={dd} title="Designing Dashboards" year="2020" category="Dashboard" content="Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet." /> <hr />
-      <WorkCard image={vp} title="Vibrant Portraits of 2020" year="2018" category="Illustration" content="Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet." /> <hr />
-      <WorkCard image={t36} title="36 Days of Malayalam type" year="2018" category="Typography" content="Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet." /> <hr />
+      <WorkCard image={"index-blog-post-images/designing-dashboards.png"} title="Designing Dashboards" year="2020" category="Dashboard" content="Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet." /> <hr />
+      <WorkCard image={"index-blog-post-images/vibrant-portraits.png"} title="Vibrant Portraits of 2020" year="2018" category="Illustration" content="Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet." /> <hr />
+      <WorkCard image={"index-blog-post-images/malayalam-type.png"} title="36 Days of Malayalam type" year="2018" category="Typography" content="Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet." /> <hr />
     </div>
     
     </div>
